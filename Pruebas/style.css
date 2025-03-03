@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+}
+
+@keyframes cambiarColor {
+    0% {
+        background-color: rgb(244, 180, 60);
+    }
+    40% {
+        background-color: blue;
+    }
+    80% {
+        background-color: rgb(244, 180, 60);
+    }
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+   
+
+body{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header > div{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    animation: cambiarColor 7s infinite;
+}
+
+header img{
+    animation: rotar 5s infinite;
+}
+
+nav > div > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+}
+
+header, nav{
+    background-color: rgb(244, 180, 60);
+    padding: 10px;
+}
+
+a[href] {
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+}
+
+nav li:first-child{
+    background-color: blue;
+}
+
+main > div{
+    background-color: beige;
+    padding-bottom: 20px;
+}
+
+#about, #skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+section img{
+    width: 90px;
+}
+
+h2{
+    font-weight: bold;
+    color: darkcyan;
+}
+
+p{
+    text-align: center;
+    padding: 5px 50px 5px 50px;
+}
+
+#skills ul {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    column-gap: 20px;
+    list-style: none;
+}
+
+#skills li{
+    border-style: dashed;
+    border-radius: 5px;
+    border-color: rgb(244, 180, 60);
+    background-color: rgb(244, 180, 60);
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+footer div{
+    background-color: darkcyan;
+    color: white;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
